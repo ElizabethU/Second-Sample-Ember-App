@@ -4,7 +4,7 @@
     <ul class='list-unstyled'>
       {{# each }}
         <li>
-          {{# link-to "plants" }}
+          {{# link-to "plant" this}}
             {{ name }}
           {{/ link-to }}
         </li>
@@ -12,6 +12,6 @@
     </ul>
   </div>
   <div class='col-lg-10'>
-    Plant View Goes Here
+    {{ outlet }}
   </div>
 </div>
